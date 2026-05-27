@@ -4,82 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>StyleStore - Tienda Moderna</title>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 20px;
-}
-
-h1, h2 {
-    color: #004080;
-}
-header h1 {
-    text-align: center;
-    background-color: #004080;
-    color: white;
-    padding: 15px 20px;
-}
-
-nav ul {
-    display: flex;
-    gap: 15px;
-    list-style: none;
-}
-
-nav a {
-    color: blanchedalmond;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.contenedor-tarjetas {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 30px 0;
-}
-
-.tarjeta {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    width: 280px;
-}
-
-.galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-.galeria img {
-    width: 90%;
-    height: 500px;
-}
-
-@media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    nav ul {
-        flex-direction: column;
-    }
-
-    .contenedor-tarjetas {
-        flex-direction: column;
-        align-items: center;
-    }
-}
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -98,8 +23,9 @@ nav a {
 </section>
 
 <section class="products">
+
 <div class="card">
-<img src="img/foto1.jpg">
+<img src="foto1.jpg">
 <div class="card-content">
 <h3>Polera Urbana</h3>
 <p class="price">S/ 50</p>
@@ -108,7 +34,7 @@ nav a {
 </div>
 
 <div class="card">
-<img src="img/foto2.jpg">
+<img src="foto2.jpg">
 <div class="card-content">
 <h3>Jeans Clásicos</h3>
 <p class="price">S/ 90</p>
@@ -117,13 +43,14 @@ nav a {
 </div>
 
 <div class="card">
-<img src="img/foto3.png">
+<img src="foto3.png">
 <div class="card-content">
 <h3>Chaqueta Moderna</h3>
 <p class="price">S/ 120</p>
 <button>Comprar</button>
 </div>
 </div>
+
 </section>
 
 <footer>
